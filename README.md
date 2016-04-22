@@ -10,8 +10,8 @@
 
 require_once 'vendor/autoload.php';
 
-//instantiate SlackHooker with webhook url
-$hooker = new SlackHooker('WEBHOOK_URL');
+//instantiate bc\Slack\SlackHooker with webhook url
+$hooker = new bc\Slack\SlackHooker('WEBHOOK_URL');
 
 //build message
 $messageBuilder = new bc\Slack\MessageBuilder();
