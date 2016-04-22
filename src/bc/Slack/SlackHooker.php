@@ -40,6 +40,8 @@ class SlackHooker {
 
     /**
      * @param string|StreamInterface $body
+     *
+     * @return \Psr\Http\Message\ResponseInterface
      */
     private function sendRequest($body) {
         $request = new Request("POST",
@@ -47,13 +49,15 @@ class SlackHooker {
                                [["Content-type" => 'application/json']],
                                $body);
 
-        $this->client->send($request);
+        return $this->client->send($request);
     }
 
     /**
      * @param array $message
+     *
+     * @return \Psr\Http\Message\ResponseInterface
      */
     public function sendMessage($message) {
-        $this->sendRequest(json_encode($message));
+        return $this->sendRequest(json_encode($message));
     }
 }
