@@ -1,5 +1,6 @@
 {
   "name": "bc/slack-hooker",
+  "description": "simple slack webhook",
   "license": "MIT",
   "authors": [
     {
