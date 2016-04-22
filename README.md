@@ -2,7 +2,9 @@
 
 ## Install
 
-`composer require "bc\slack-hooker"`
+````bash
+composer require "bc\slack-hooker"
+````
 
 ## Usage
 
