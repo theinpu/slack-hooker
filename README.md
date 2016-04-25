@@ -33,9 +33,9 @@ $attachBuilder
     ->setAuthorIcon("")
     ->setTitle("title")
     ->setTitleLink("")
-    ->addFiled('filed1', 'value')
-    ->addFiled('filed2', 'value')
-    ->addFiled('field3', 'value', false)
+    ->addField('field1', 'value')
+    ->addField('field2', 'value')
+    ->addField('field3', 'value', false)
     ->setImageUrl("")
     ->setThumbUrl("");
 

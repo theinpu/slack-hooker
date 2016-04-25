@@ -175,7 +175,7 @@ class AttachmentBuilder {
      *
      * @return AttachmentBuilder
      */
-    public function addFiled($title, $value, $short = true) {
+    public function addField($title, $value, $short = true) {
         $filed = [
             'title' => $title,
             'value' => $value,
